@@ -2,6 +2,8 @@ GEM
   remote: http://rubygems.org/
   specs:
     eventmachine (0.12.10)
+    mechanize (1.0.0)
+      nokogiri (>= 1.2.1)
     nokogiri (1.4.4)
 
 PLATFORMS
@@ -9,4 +11,5 @@ PLATFORMS
 
 DEPENDENCIES
   eventmachine
+  mechanize
   nokogiri
