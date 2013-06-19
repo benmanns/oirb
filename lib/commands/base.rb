@@ -46,7 +46,9 @@ class OgreIsland::Commands::Base
   attr_accessor :key
 
   def initialize *attributes
-    if self.class.formats
+    if attributes.first.is_a? Hash
+      @attributes = attributes.first
+    elsif self.class.formats
       @attributes = {}
     else
       @attributes = attributes

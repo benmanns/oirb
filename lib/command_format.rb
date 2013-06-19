@@ -9,6 +9,14 @@ class OgreIsland::CommandFormat
     @fields << { :type => type, :name => name }
   end
 
+  def integer name
+    field OgreIsland::Fields::Integer, name
+  end
+
+  def item name
+    field OgreIsland::Fields::Item, name
+  end
+
   def string name
     field OgreIsland::Fields::String, name
   end

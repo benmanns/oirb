@@ -1,8 +1,10 @@
 module OgreIsland
-  require 'client_protocol'
-  require 'command_format'
-  require 'commands'
-  require 'fields'
-  require 'protocol'
-  require 'server_protocol'
+  autoload :Client, 'client'
+  autoload :ClientProtocol, 'client_protocol'
+  autoload :CommandFormat, 'command_format'
+  autoload :Commands, 'commands'
+  autoload :Fields, 'fields'
+  autoload :Protocol, 'protocol'
+  autoload :Proxy, 'proxy'
+  autoload :ServerProtocol, 'server_protocol'
 end

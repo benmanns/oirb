@@ -1,6 +1,2 @@
-module OgreIsland
-  module Fields
-    class String < Base
-    end
-  end
+class OgreIsland::Fields::String < OgreIsland::Fields::Base
 end

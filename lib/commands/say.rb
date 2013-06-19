@@ -4,6 +4,7 @@ class OgreIsland::Commands::Say < OgreIsland::Commands::Base
     command.string :text
     command.string :channel
   end
+
   register 'SAY', :mode => :client do |command|
     command.string :text
   end

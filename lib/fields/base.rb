@@ -1,4 +1,4 @@
-module OgreIsland::Fields::Base
+class OgreIsland::Fields::Base
   class << self
     def parse string, options={}
       string
